@@ -36,13 +36,13 @@ const HomeSec = () => {
   return (
     <div id="home">
       <Carousel
-      // opts={{ loop: true }}
-      // plugins={[
-      //   Autoplay({
-      //     delay: 3000,
-      //   }),
-      // ]}
-      // orientation="horizontal"
+      opts={{ loop: true }}
+      plugins={[
+        Autoplay({
+          delay: 3000,
+        }),
+      ]}
+      orientation="horizontal"
       >
         <CarouselContent>
           <CarouselItem>

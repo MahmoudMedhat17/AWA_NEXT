@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Carousel,
   CarouselContent,
@@ -61,16 +63,16 @@ const SuccesPartners = () => {
       </div>
       <div className="py-20 px-8">
         <Carousel
-        // opts={{
-        //   align: "start",
-        //   loop: true,
-        // }}
-        // plugins={[
-        //   Autoplay({
-        //     delay: 3000,
-        //   }),
-        // ]}
-        // orientation="horizontal"
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          plugins={[
+            Autoplay({
+              delay: 3000,
+            }),
+          ]}
+          orientation="horizontal"
         >
           <CarouselContent>
             {partnerLogos.map((compLogo, index) => (
