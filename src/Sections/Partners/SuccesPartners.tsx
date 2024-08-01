@@ -39,7 +39,6 @@ const SuccesPartners = () => {
                   key={index}
                   src={compLogo.imageUrl}
                   className="w-[130px]"
-                  alt=""
                 />
               </CarouselItem>
             ))}
