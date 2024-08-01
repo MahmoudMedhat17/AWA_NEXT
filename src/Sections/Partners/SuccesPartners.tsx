@@ -44,7 +44,7 @@ const SuccesPartners = () => {
             ))}
           </CarouselContent>
         </Carousel>
-      </div>
+      </div>  
     </div>
   );
 };
