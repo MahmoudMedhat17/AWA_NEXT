@@ -4,8 +4,8 @@ import Services from "@/components/services/services";
 import WhyChooseUs from "@/Sections/WhyChooseUs";
 import OurValues from "@/Sections/OurValues";
 import OurVision from "@/Sections/OurVision";
-import Partners from "@/Sections/Partners";
-import SuccesPartners from "@/Sections/SuccesPartners";
+import Partners from "@/Sections/Partners/Partners";
+import SuccesPartners from "@/Sections/Partners/SuccesPartners";
 // import Projects from "@/Sections/Projects";
 import ContactUs from "@/Sections/ContactUs";
 
