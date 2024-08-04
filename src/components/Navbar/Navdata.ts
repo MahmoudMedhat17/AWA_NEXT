@@ -1,83 +1,97 @@
-import exp from "constants"
-
 export const WebNavData = [
     {
-        link: "/",
-        title: "Home"
+        link: "#home",
+        title: "Home",
+        route: "/#home"
     },
 
     {
         link: "#aboutus",
-        title: "About Us"
+        title: "About Us",
+        route: "/#aboutus"
     },
 
     {
         link: "#services",
-        title: "Services"
+        title: "Services",
+        route: "/#services"
     },
 
     {
         link: "#chooseus",
-        title: "Choose Us"
+        title: "Choose Us",
+        route: "/#chooseus"
     },
 
     {
         link: "#values",
-        title: "Values"
+        title: "Values",
+        route: "/#values"
     },
 
     {
-        link: "#ourVision",
-        title: "Our Vision"
+        link: "#ourvision",
+        title: "Our vision",
+        route: "/#ourvision"
     },
-
     {
         link: "/projects",
-        title: "Projects"
+        title: "Projects",
+        route: "/"
     },
     {
         link: "#contactus",
-        title: "Contact Us"
+        title: "Contact Us",
+        route: "/#contactus"
     }
 ]
 
+
+
 export const MobNavData = [
     {
-        link: "/",
-        title: "Home"
+        link: "#home",
+        title: "Home",
+        route: "/#home"
     },
 
     {
         link: "#aboutus",
-        title: "About Us"
+        title: "About Us",
+        route: "/#aboutus"
     },
 
     {
         link: "#services",
-        title: "Services"
+        title: "Services",
+        route: "/#services"
     },
 
     {
         link: "#chooseus",
-        title: "Choose Us"
+        title: "Choose Us",
+        route: "/#chooseus"
     },
 
     {
         link: "#values",
-        title: "Values"
+        title: "Values",
+        route: "/#values"
     },
 
     {
-        link: "#ourVision",
-        title: "Our Vision"
+        link: "#ourvision",
+        title: "Our vision",
+        route: "/#ourvision"
     },
-
     {
         link: "/projects",
-        title: "Projects"
+        title: "Projects",
+        route: "/"
     },
     {
         link: "#contactus",
-        title: "Contact Us"
+        title: "Contact Us",
+        route: "/#contactus"
     }
 ]

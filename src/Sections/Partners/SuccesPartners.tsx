@@ -6,11 +6,11 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import { successPartnerLogos } from "./PartnersData";
+import { successPartnerLogos } from "../Data";
 
 const SuccesPartners = () => {
   return (
-    <div className="py-[2rem] bg-white flex flex-col justify-center items-center">
+    <div className="py-8 bg-white flex flex-col justify-center items-center">
       <div>
         <h2 className="text-[#2D3E6A] text-[24px] sm:text-[40px] font-medium">
           Partners Of Success
@@ -44,7 +44,7 @@ const SuccesPartners = () => {
             ))}
           </CarouselContent>
         </Carousel>
-      </div>  
+      </div>
     </div>
   );
 };

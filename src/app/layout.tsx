@@ -3,14 +3,12 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/Sections/Footer/Footer";
 import "./globals.css";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "AWA",
-  // icons: {
-  //   icon: "images/awa-logo.png",
-  // },
 };
 
 export default function RootLayout({

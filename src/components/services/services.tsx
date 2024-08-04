@@ -16,13 +16,13 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="bg-[#2D3E6A] p-[2rem] lg:p-[5rem] flex flex-col justify-center items-center group"
+      className="bg-[#2D3E6A] p-8 lg:p-20 flex flex-col justify-center items-center group"
     >
       <div className="text-white mb-14">
-        <p className="w-fit border-2 border-t-[#DFA100] border-b-[#DFA100] border-r-0 border-l-0 text-[20px] mb-[1rem]">
+        <p className="w-fit border-2 border-t-[#DFA100] border-b-[#DFA100] border-r-0 border-l-0 text-[20px] mb-4">
           What We Offer
         </p>
-        <h3 className="text-[28px] lg:text-[38px] font-medium mb-[0.5rem]">
+        <h3 className="text-[28px] lg:text-[38px] font-medium mb-2">
           Our Services
         </h3>
         <p className="w-[100%] lg:w-[790px] text-[14px] lg:text-[22px]">
@@ -30,7 +30,7 @@ const Services = () => {
           for any specific requirements
         </p>
       </div>
-      <div className="flex justify-center items-center flex-wrap gap-8 ">
+      <div className="flex justify-center items-center flex-wrap gap-8">
         <FireDialog item={fireFightingContent} />
         {modalContent.slice(0, 3).map((item) => (
           <ServiceDialog item={item} key={item.title} />
@@ -41,7 +41,7 @@ const Services = () => {
           </div>
         ))}
 
-        <div className="p-20 hidden md:block ">
+        <div className="p-20 hidden md:block">
           <ServiceDialog item={modalContent[3]} />
           <div className="rotate-[104deg] relative  ">
             {isClient &&

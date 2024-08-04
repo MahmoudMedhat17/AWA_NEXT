@@ -9,8 +9,8 @@ const CustomSlider = () => {
         backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.116), transparent 100%),url(/images/BannerImgs/hero.png)`,
       }}
     >
-      <div className="flex flex-col justify-center items-center h-[100%] px-0 lg:px-[1rem] xl:px-0">
-        <div className="flex flex-col md:flex-row justify-center items-center pt-20 md:mb-[1rem]">
+      <div className="flex flex-col justify-center items-center h-[100%] px-0 lg:px-4 xl:px-0">
+        <div className="flex flex-col md:flex-row justify-center items-center pt-20 md:mb-4">
           <img
             src="/images/AWA-LOGO-TXT.png"
             className="w-[200px] lg:w-fit pb-4 md:pb-0 md:pl-4 lg:pl-0"
@@ -24,7 +24,7 @@ const CustomSlider = () => {
           </p>
           <img
             src="/images/BannerImgs/omniClouds.png"
-            className="w-[200px] lg:w-fit mb-[1.5rem] md:mb-0"
+            className="w-[200px] lg:w-fit mb-6 md:mb-0"
           />
         </div>
         {/* <div className="text-[18px] md:text-[24px] font-medium text-center">
@@ -33,9 +33,9 @@ const CustomSlider = () => {
           </p>
           <p className="mb-[1rem] opacity-[0.9]">SINCE 2015</p>
         </div> */}
-        <div className="mt-[2rem] flex justify-center items-center gap-[3rem] text-center">
+        <div className="mt-8 flex justify-center items-center gap-12 text-center">
           <button
-            className="bg-[#2D3E6A] p-[0.5rem] border-none rounded-lg text-white text-[18px] h-fit"
+            className="bg-[#2D3E6A] p-2 border-none rounded-lg text-white text-[18px] h-fit"
             onClick={() => scrollToElement("contactus")}
           >
             CONTACT US

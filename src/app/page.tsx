@@ -6,9 +6,8 @@ import OurValues from "@/Sections/OurValues";
 import OurVision from "@/Sections/OurVision";
 import Partners from "@/Sections/Partners/Partners";
 import SuccesPartners from "@/Sections/Partners/SuccesPartners";
-// import Projects from "@/Sections/Projects";
 import ContactUs from "@/Sections/ContactUs";
-
+import { FaWhatsapp } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -18,11 +17,17 @@ export default function Home() {
       <Services />
       <WhyChooseUs />
       <OurValues />
+      <SuccesPartners />
       <OurVision />
       <Partners />
-      <SuccesPartners />
       <ContactUs />
-      {/* <Projects /> */}
+      <a
+        href="https://wa.me/201006684663"
+        target="_blank"
+        className=" bg-green-300 p-1 sm:p-2 rounded-full  cursor-pointer text-[#25D366] fixed right-3 bottom-3 sm:right-[10px] sm:bottom-[25px]"
+      >
+        <FaWhatsapp size={30} />
+      </a>
     </div>
   );
 }

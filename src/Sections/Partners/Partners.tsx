@@ -6,7 +6,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import { partnerLogos } from "./PartnersData";
+import { partnerLogos } from "../Data";
 
 const Partners = () => {
   return (

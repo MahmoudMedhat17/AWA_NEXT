@@ -1,39 +1,5 @@
 import Link from "next/link";
-
-const footerData = [
-  {
-    title: "Home",
-    link: "#home",
-  },
-  {
-    title: "About Us",
-    link: "#aboutus",
-  },
-  {
-    title: "Services",
-    link: "#services",
-  },
-  {
-    title: "Choose Us",
-    link: "#chooseUs",
-  },
-  {
-    title: "Values",
-    link: "#values",
-  },
-  {
-    title: "Our Vision",
-    link: "#ourVision",
-  },
-  {
-    title: "Projects",
-    link: "#projects",
-  },
-  {
-    title: "Contact Us",
-    link: "#contactus",
-  },
-];
+import { footerData } from "../Data";
 
 const FooterData = () => {
   return (

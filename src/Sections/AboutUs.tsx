@@ -11,9 +11,12 @@ const AboutUs = () => {
 
   return (
     // MAIN DIV
-    <div id="aboutus" className="p-0 md:p-12 flex justify-center items-center">
+    <div
+      id="aboutus"
+      className="p-0 md:p-12 flex justify-center items-center pb-8"
+    >
       {/* IMGS DIV */}
-      <div className="hidden sm:flex flex-col justify-center items-center m-[2.5rem] w-[30%] sm:max-lg:w-[50%]">
+      <div className="hidden sm:flex flex-col justify-center items-center m-10 w-[30%] sm:max-lg:w-[50%]">
         <img
           src="/images/about-us-1.png"
           className="scale-[1.08] max-w-full h-auto"
@@ -26,11 +29,11 @@ const AboutUs = () => {
         />
       </div>
       {/* Text DIV */}
-      <div className="w-full max-sm:w-full max-sm:p-[1.5rem] text-sm sm:text-lg md:text-xl">
+      <div className="w-full max-sm:w-full max-sm:p-6 text-sm sm:text-lg md:text-xl">
         <h2 className="text-[#2D3E6A] text-[40px] max-sm:text-[24px] sm:max-md:text-[28px] font-medium py-5">
           About Us
         </h2>
-        <p className="mb-[1rem]">
+        <p className="mb-4">
           AWA is a MEP & Low current contracting and Trading Company . It is a
           group of experts Engineers diversified electromechanical activities
           for more than 15 years around Middle East, we are committed to deliver
@@ -42,7 +45,7 @@ const AboutUs = () => {
         </p>
         <div>
           {isOpen ? (
-            <p className="mb-[1rem]">
+            <p className="mb-4">
               Our work encompasses multitude of simple and complex projects that
               require attention t o specific details, thorough knowledge of the
               requirements, strategic planning, abundant resources a n d

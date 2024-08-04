@@ -7,15 +7,15 @@ const DefaultSlider = () => {
         <p className="text-[80px] md:text-[128px] font-[prata,serif] ">AWA</p>
       </div>
       <div className="text-[18px] md:text-[24px] font-medium text-center">
-        <p className="mb-[1rem] uppercase opacity-[0.9]">
+        <p className="mb-4 uppercase opacity-[0.9]">
           MEP-Low Current
           <br /> for contracting & trading
         </p>
-        <p className="mb-[1rem] text-black">SINCE 2015</p>
+        <p className="mb-4 text-black">SINCE 2015</p>
       </div>
-      <div className="mt-[2rem] flex justify-center items-center gap-[3rem] text-center">
+      <div className="mt-8 flex justify-center items-center gap-12 text-center">
         <button
-          className="bg-[#2D3E6A] p-[0.5rem] border-none rounded-lg text-white text-[18px] h-fit"
+          className="bg-[#2D3E6A] p-2 border-none rounded-lg text-white text-[18px] h-fit"
           onClick={() => scrollToElement("contactus")}
         >
           CONTACT US

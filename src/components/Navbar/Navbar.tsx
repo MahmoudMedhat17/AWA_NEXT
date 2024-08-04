@@ -4,18 +4,22 @@ import { useState, useRef } from "react";
 import scrollToElement from "@/util/scrollToElement";
 import useScrollHeight from "@/hooks/useScrollOpacity ";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 import WebNavlinks from "./WebNavlinks";
 import MobNavlinks from "./MobNavlinks";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Navbar = () => {
-  const [dropDownMenu, setDropDownMenu] = useState<boolean>(false);
+  // const [dropDownMenu, setDropDownMenu] = useState<boolean>(false);
   const navBarRef = useRef<HTMLDivElement>(null);
-  const path = usePathname();
-  const handleMenu = () => {
-    setDropDownMenu(!dropDownMenu);
-  };
+  // const handleMenu = () => {
+  //   setDropDownMenu(!dropDownMenu);
+  // };
   const scrollHeight = useScrollHeight();
 
   return (
@@ -24,7 +28,7 @@ const Navbar = () => {
       ref={navBarRef}
       className="fixed w-full flex justify-between items-center px-8 z-50 transition-all duration-50 bg-gray-200 text-black"
     >
-      <Link href="/" onClick={() => scrollToElement("home")}>
+      <Link href="/" onClick={() => scrollToElement("/")}>
         <img
           src="/images/awa-logo.png"
           className={`${
@@ -36,8 +40,8 @@ const Navbar = () => {
 
       {/* MOB version*/}
       <div className="flex lg:hidden text-black text-[18px]">
-        <div className="cursor-pointer">
-          {dropDownMenu ? (
+        {/* <div className="cursor-pointer"> */}
+        {/* {dropDownMenu ? (
             <IoMdClose
               size={30}
               onClick={handleMenu}
@@ -49,9 +53,19 @@ const Navbar = () => {
               onClick={handleMenu}
               className="text-[#2D3E6A]"
             />
-          )}
-        </div>
-        {dropDownMenu && <MobNavlinks />}
+          )} */}
+        <DropdownMenu>
+          <DropdownMenuTrigger>
+            <IoMdMenu size={30} className="text-[#2D3E6A]" />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent>
+            <DropdownMenuItem>
+              <MobNavlinks />
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+        {/* </div> */}
+        {/* {dropDownMenu && <MobNavlinks />} */}
       </div>
     </nav>
   );
